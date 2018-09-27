@@ -1,0 +1,9 @@
+height: 1500
+width: 1500
+zones: []
+lane_markers: []
+starts: []
+agent_start:
+  x: 430
+  y: 800
+  theta: 3.141592653589793

@@ -1,0 +1,42 @@
+height: 1500
+width: 1000
+zones:
+  - corner: [400, 0]
+    size: [103, 430]
+    label: lane
+  - corner: [500, 0]
+    size: [103, 430]
+    label: lane
+  - corner: [0, 430]
+    size: [400, 100]
+    label: lane
+  - corner: [0, 530]
+    size: [400, 100]
+    label: lane
+  - corner: [600, 430]
+    size: [400, 100]
+    label: lane
+  - corner: [600, 530]
+    size: [400, 100]
+    label: lane
+  - corner: [400, 630]
+    size: [103, 870]
+    label: lane
+  - corner: [500, 630]
+    size: [103, 870]
+    label: lane
+  - corner: [400, 430]
+    size: [200, 200]
+    label: intersection
+lane_markers: []
+starts:
+  - position: [450, 40]
+    orientation: down
+  - position: [30, 480]
+    orientation: right
+  - position: [30, 580]
+    orientation: right
+agent_start:
+  x: 550
+  y: 250
+  theta: 0.

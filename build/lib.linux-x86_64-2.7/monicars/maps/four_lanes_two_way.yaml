@@ -1,0 +1,29 @@
+height: 1500
+width: 700
+zones:
+  - corner: [150, 0]
+    size: [100, 1500]
+    label: lane
+  - corner: [250, 0]
+    size: [100, 1500]
+    label: lane
+  - corner: [350, 0]
+    size: [100, 1500]
+    label: lane
+  - corner: [450, 0]
+    size: [100, 1500]
+    label: lane
+lane_markers: []
+starts:
+  - position: [200, 40]
+    orientation: down
+  - position: [300, 40]
+    orientation: down
+  - position: [400, 1460]
+    orientation: up
+  - position: [500, 1460]
+    orientation: up
+agent_start:
+  x: 300
+  y: 30
+  theta: 0.

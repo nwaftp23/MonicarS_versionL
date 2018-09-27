@@ -1,0 +1,35 @@
+global:
+  fps: 40            # Frame rate of sim.
+  max_angle: 0.5235987755982988  # Maximum anglular acceleration / step.
+  max_acc: 0.1       # Maximum acceleration / step.
+  max_speed: 20      # Maximum speed.
+visualization:       # Dimentions of the screen to visualize.
+  width: 500
+  height: 500
+init:                # Initialization parameters.
+  use_pos: False     # If false, use the default start location in the map yaml, otherwise use this one.
+  x: 480
+  y: 480
+  theta: 82.
+  speed: 6.
+  add_noise: False    # Whether to add Gaussian noise to starting position.
+  std_x: 5           # Standard deviation of noise to add to position (pixels).
+  std_y: 0
+  std_theta: 0       # Standard deviation of noise to add to position (radians).
+  std_speed: 0       # Standard deviation of noise to add to speed (pixels/s).
+traffic:
+  freq: 0.5          # Probability of new car / second.
+  max_cars: 0        # Maximum number of NPCs on the road, not including obstacle.
+  speed: 6.          # Speed of the NPC car.
+obstacle:            # Scenarios where a car is in front of the agent.
+  x: 700
+  y: 550
+  theta: 1.57
+  speed: 8
+  noise: True        # Whether to add Gaussian noise to starting position.
+  std_x: 0
+  std_y: 0
+  std_speed: 2
+  crash: False       # Whether the car should have an accident.
+  prob_crash: 0.4    # Probability of crash in the episode.
+  crash_y: 1000      # Y position of crash.

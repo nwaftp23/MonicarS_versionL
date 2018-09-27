@@ -1,0 +1,13 @@
+height: 1500
+width: 700
+zones: []
+lane_markers: []
+starts:
+  - position: [200, 40]
+    orientation: down
+  - position: [300, 40]
+    orientation: down
+agent_start:
+  x: 620
+  y: 30
+  theta: -0.513
