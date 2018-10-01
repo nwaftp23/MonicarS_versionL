@@ -191,11 +191,9 @@ class Environment(object):
         done = self._get_done()
 
         self._keep_agent_in_map()
-        collision = [self.collided()]
-        if self.obstacle:
-            stuck = [self.npc_manager.npcs[0].crash]
+    
 
-        return obs + collision +stuck, self.reward(obs), done
+        return obs , self.reward(obs), done
 
     def reset(self, state=None):
         """Resets the simulation.
@@ -411,7 +409,8 @@ class Environment(object):
         # Pad with zeros.
         npc_state += [0, 0, 0, 0] * (self.npc_manager.MAX - len(self.npc_manager.npcs))
 
-        observation = agent_state + npc_state
+        observation = agent_state + npc_state + [self.collided()*1]
+
 
         if self.decimals is not None:
             observation = [round(float(x), self.decimals) for x in observation]

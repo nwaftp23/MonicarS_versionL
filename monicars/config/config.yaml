@@ -1,5 +1,5 @@
 global:
-  fps: 10            # Frame rate of sim.
+  fps: 100            # Frame rate of sim.
   max_angle: 0.5235987755982988  # Maximum anglular acceleration / step.
   max_acc: 0.5       # Maximum acceleration / step.
   max_speed: 40      # Maximum speed.
