@@ -1,8 +1,8 @@
 global:
   fps: 40            # Frame rate of sim.
   max_angle: 0.5235987755982988  # Maximum anglular acceleration / step.
-  max_acc: 1       # Maximum acceleration / step.
-  max_speed: 20      # Maximum speed.
+  max_acc: 0.5       # Maximum acceleration / step.
+  max_speed: 40      # Maximum speed.
 visualization:       # Dimentions of the screen to visualize.
   width: 500
   height: 500
@@ -11,7 +11,7 @@ init:                # Initialization parameters.
   x: 480
   y: 480
   theta: 82.
-  speed: 0.
+  speed: 20
   add_noise: False    # Whether to add Gaussian noise to starting position.
   std_x: 5           # Standard deviation of noise to add to position (pixels).
   std_y: 0
@@ -23,9 +23,9 @@ traffic:
   speed: 6.          # Speed of the NPC car.
 obstacle:            # Scenarios where a car is in front of the agent.
   x: 200
-  y: 61
+  y: 100
   theta: 0
-  speed: 6
+  speed: 20
   noise: True        # Whether to add Gaussian noise to starting position.
   std_x: 0
   std_y: 0
@@ -33,4 +33,4 @@ obstacle:            # Scenarios where a car is in front of the agent.
   crash: True       # Whether the car should have an accident.
   prob_crash: 0.999    # Probability of crash in the episode.
   crash_y: 1494      # Y position of crash.
-  total_stuck_time: 30   # The amount of time the front car is stuck
+  total_stuck_time: 100   # The amount of time the front car is stuck
