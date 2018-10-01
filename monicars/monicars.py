@@ -191,8 +191,11 @@ class Environment(object):
         done = self._get_done()
 
         self._keep_agent_in_map()
+        collision = [self.collided()]
+        if self.obstacle:
+            stuck = [self.npc_manager.npcs[0].crash]
 
-        return obs, self.reward(obs), done
+        return obs + collision +stuck, self.reward(obs), done
 
     def reset(self, state=None):
         """Resets the simulation.

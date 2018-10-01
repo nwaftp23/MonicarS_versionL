@@ -1,5 +1,5 @@
 global:
-  fps: 40            # Frame rate of sim.
+  fps: 10            # Frame rate of sim.
   max_angle: 0.5235987755982988  # Maximum anglular acceleration / step.
   max_acc: 0.5       # Maximum acceleration / step.
   max_speed: 40      # Maximum speed.
@@ -31,6 +31,6 @@ obstacle:            # Scenarios where a car is in front of the agent.
   std_y: 0
   std_speed: 0
   crash: True       # Whether the car should have an accident.
-  prob_crash: 0.999    # Probability of crash in the episode.
+  prob_crash: 0.01    # Probability of crash in the episode.
   crash_y: 1494      # Y position of crash.
   total_stuck_time: 100   # The amount of time the front car is stuck
